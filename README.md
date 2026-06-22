@@ -1,5 +1,11 @@
 # The Diamond Collection game on an Unity Engine (3D RPG)
 
+Этот проект собирается на `Unity Engine 6.3 (LTS)`.
+Есть проблема с импортиртом ассета [Jammo Character](https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456), поскольку он был разработан на старую версию `Unity Engine 2019.2.3` и содержит устаревшие методы.
+Решить проблему с устаревшими методами можно загрузить исходный код этого проекта из репозитория [Jammo-Character](https://github.com/mixandjam/Jammo-Character) и принудительно собрать его на версиии `Unity Engine 6.3 (LTS)`.
+А все устаревшие методы на которые будет ругаться `Unity Engine 6.3 (LTS)` можно просто удалить из проекта.
+Этот проект переименовываем и далее в этот проект импортируем ассет [RPG Poly Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410)
+
 For details inform can you refer to base tutorials [#1](https://www.youtube.com/watch?v=K5FM6bz4qO4) and [#2](https://www.youtube.com/watch?v=veFxqpw8LKI),
 also [HotKes](https://docs.unity3d.com/ru/2021.1/Manual/search-overview.html), [Engine lifecycle](https://docs.unity3d.com/ru/current/Manual/ExecutionOrder.html).
 
@@ -17,9 +23,9 @@ Explain lessons topics: Event, Enums, Coroutines, Singleton, Generic
 + Dev Environment:
   - **Unity Engine**: [6.3 (LTS)](https://docs.unity3d.com/6000.3/Documentation/Manual)
   - **Microsoft Visual Studio**: 2022 (_Community_)
-  - **Game Assets**: [RPG Poly Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410?srsltid=AfmBOopyTWvyJbW2FR-QsMngGbpQUZwNhEXTJWuIjfRgfdgobDy4EBTA),
-[Jammo Character](https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456?srsltid=AfmBOoqk_DhLTlslWLfZPgbMGYizJWE7Q7qxmtNsrSzryxVY0UAaVVsM),
-[Coin Treasure Bundle](https://assetstore.unity.com/packages/3d/props/coin-treasure-bundle-with-animation-3d-250070?srsltid=AfmBOopmysnKe723e1sZXHBXWI6KgqJ4yItJOAX9NfgDMllOWX_Wu3dH)
+  - **Game Assets**: [RPG Poly Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410),
+[Jammo Character](https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456),
+[Coin Treasure Bundle](https://assetstore.unity.com/packages/3d/props/coin-treasure-bundle-with-animation-3d-250070)
   - **Sound Resources**: [Gaming victory](https://pixabay.com/sound-effects/search/victory),
 [Game Over](https://pixabay.com/sound-effects/search/game-sad-music)
 
