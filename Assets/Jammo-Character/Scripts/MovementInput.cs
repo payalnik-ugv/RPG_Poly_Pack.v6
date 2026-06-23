@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 //This script requires you to have setup your animator with 3 parameters, "InputMagnitude", "InputX", "InputZ"
 //With a blend tree to control the inputmagnitude and allow blending between animations.
 [RequireComponent(typeof(CharacterController))]
 public class MovementInput : MonoBehaviour {
+
+    [SerializeField] private InputActionReference moveAction; // Перетащите сюда ваш Action из инспектора
 
     public float Velocity;
     [Space]
@@ -63,10 +66,11 @@ public class MovementInput : MonoBehaviour {
     }
 
     void PlayerMoveAndRotation() {
-		InputX = Input.GetAxis ("Horizontal");
-		InputZ = Input.GetAxis ("Vertical");
+        Vector2 InputVector = moveAction.action.ReadValue<Vector2>();
+        InputX = InputVector.x; //InputX = Input.GetAxis ("Horizontal");
+        InputZ = InputVector.y; //InputZ = Input.GetAxis ("Vertical");
 
-		var camera = Camera.main;
+        var camera = Camera.main;
 		var forward = cam.transform.forward;
 		var right = cam.transform.right;
 
@@ -102,15 +106,16 @@ public class MovementInput : MonoBehaviour {
     }
 
 	void InputMagnitude() {
-		//Calculate Input Vectors
-		InputX = Input.GetAxis ("Horizontal");
-		InputZ = Input.GetAxis ("Vertical");
+        //Calculate Input Vectors
+        Vector2 InputVector = moveAction.action.ReadValue<Vector2>();
+        InputX = InputVector.x; //InputX = Input.GetAxis("Horizontal");
+        InputZ = InputVector.y; //InputZ = Input.GetAxis("Vertical");
 
-		//anim.SetFloat ("InputZ", InputZ, VerticalAnimTime, Time.deltaTime * 2f);
-		//anim.SetFloat ("InputX", InputX, HorizontalAnimSmoothTime, Time.deltaTime * 2f);
+        //anim.SetFloat ("InputZ", InputZ, VerticalAnimTime, Time.deltaTime * 2f);
+        //anim.SetFloat ("InputX", InputX, HorizontalAnimSmoothTime, Time.deltaTime * 2f);
 
-		//Calculate the Input Magnitude
-		Speed = new Vector2(InputX, InputZ).sqrMagnitude;
+        //Calculate the Input Magnitude
+        Speed = new Vector2(InputX, InputZ).sqrMagnitude;
 
         //Physically move player
 
