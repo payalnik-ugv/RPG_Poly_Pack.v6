@@ -9,4 +9,14 @@ public class Diamond : MonoBehaviour
     {
         diamondVisual.transform.Rotate(Vector3.up * 150f * Time.deltaTime); // Rotate the diamond visual around the Y-axis   
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Add logic for when the player collects the diamond
+            Debug.Log("Diamond collected!");
+            Destroy(gameObject); // Destroy the diamond object after collection
+        }
+    }
 }
