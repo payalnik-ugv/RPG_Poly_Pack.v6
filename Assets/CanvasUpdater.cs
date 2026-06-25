@@ -26,5 +26,17 @@ public class CanvasUpdater : MonoBehaviour
     {
         diamondTextAmmount.text = diamondAmmount.ToString();
         goldTextAmmount.text = goldAmmount.ToString();
+
+        /**
+         ** If the player collects 4 or more resources, they lose the game.
+         */
+        if ((diamondAmmount + goldAmmount) >= 4)
+        {
+            Audio.instance.Loose();
+        }
+        else
+        {
+            Audio.instance.Victory();
+        }
     }
 }
