@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CollectableObject : MonoBehaviour
 {
-    [SerializeField] private Resource resource;
+    [SerializeField] private AllEnums resource;
     [SerializeField] private GameObject diamondVisual;
 
     // Update is called once per frame

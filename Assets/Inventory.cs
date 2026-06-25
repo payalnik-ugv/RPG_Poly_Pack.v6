@@ -9,16 +9,16 @@ public class Inventory : MonoBehaviour
 
     public event Action<int, int> ONCanvasUpdate;
 
-    public void AddResource(Resource resource)
+    public void AddResource(AllEnums resource)
     {
         //int enumTypeNumber = (int) resource;
         switch (resource)
         {
-            case Resource.Diamond:
+            case AllEnums.Diamond:
                 _diamondAmmount++;
                 //Debug.Log("Ammount for " + Resource.Diamond + " (index: " + enumTypeNumber + ")");
                 break;
-            case Resource.Gold:
+            case AllEnums.Gold:
                 _goldAmmount++;
                 //Debug.Log("Ammount for " + Resource.Gold  + " (index: " + enumTypeNumber + ")");
                 break;
