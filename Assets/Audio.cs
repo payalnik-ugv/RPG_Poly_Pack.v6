@@ -11,7 +11,7 @@ public class Audio : MonoBehaviour
 
     private void Awake()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         if (instance == null)
         {
