@@ -1,6 +1,7 @@
 # The Diamond Collection game on an Unity Engine (3D RPG)
 
 Этот проект собирается на `Unity Engine 6.3 (LTS)`.
+[FRPG_Poly_Pack.v6](https://onedrive.live.com/?viewid=8fefce9a-040e-4a51-b21d-67ce83b9a6fd&id=%2Fpersonal%2F514531b47d0024f7%2FDocuments%2FДокументы%2FRPG_Poly_Pack%2Ev6%2Etxt&parent=%2Fpersonal%2F514531b47d0024f7%2FDocuments%2FДокументы)
 
 #### Решение проблемы №1
 Есть проблема с импортиртом ассета [Jammo Character](https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456), поскольку он был разработан на старую версию `Unity Engine 2019.2.3` и содержит устаревшие методы.
@@ -72,10 +73,15 @@ Blogs: [Создание игры на Unity с нуля](https://artean.ru/blog
 ![Game prcess](Images/screenshot_01.png)
 ![Game prcess](Images/screenshot_02.png)
 ![Game prcess](Images/screenshot_03.png)
-![Finish game prcess](Images/screenshot_04.png)
 
 #### Source code:
 ![AllEnums.cs](Images/screenshot_10.png)
 ![CollectableObject.cs](Images/screenshot_11.png)
 ![Inventory.cs](Images/screenshot_12.png)
 ![CanvasUpdater.cs](Images/screenshot_13.png)
+![CharacterSkinController.cs](Images/screenshot_14.png)
+![MovementInput.cs](Images/screenshot_15.png)
+![CoroutineSpawner.cs](Images/screenshot_16.png)
+![Audio.cs](Images/screenshot_17.png)
+![SceneController.cs](Images/screenshot_18.png)
+![Build Profiles](Images/screenshot_19.png)
