@@ -46,7 +46,13 @@
 For details inform can you refer to base tutorials [#1](https://www.youtube.com/watch?v=K5FM6bz4qO4) and [#2](https://www.youtube.com/watch?v=veFxqpw8LKI),
 also [HotKes](https://docs.unity3d.com/ru/2021.1/Manual/search-overview.html), [Engine lifecycle](https://docs.unity3d.com/ru/current/Manual/ExecutionOrder.html).
 
-Explain lessons topics: Event, Enums, Coroutines, Singleton, Generic
+#### C# в Unity для [Средних Полных Новичков](https://www.youtube.com/watch?v=v_cV5kZqKYs&list=PLNzztfzgW7VFK2RmyFfzHqD8X5m7Tojun)
+1. [#0 Ввод, Ключевые слова](https://www.youtube.com/watch?v=ajHQ5CHnO0s)
+2. [#1 Проект, События (Ивенты, events)](https://www.youtube.com/watch?v=p-989gH2hfU)
+3. [#2 Добавляем в игру Enum](https://www.youtube.com/watch?v=LkCdgLfF-Rg)
+4. [#3 Свойства, Словарь / Properties, Dictionary](https://www.youtube.com/watch?v=s0xQ_kTXT5o)
+5. [#4 Корутины, Рекурсии, params, Coroutine, Recursion](https://www.youtube.com/watch?v=UyZ77a2ZQkI)
+6. [#5 Singleton (Синглтон), Generic (Генерики)](https://www.youtube.com/watch?v=v_cV5kZqKYs)
 
 + Unity API:
   - [Audio](https://docs.unity3d.com/6000.3/Documentation/Manual/Audio.html)
